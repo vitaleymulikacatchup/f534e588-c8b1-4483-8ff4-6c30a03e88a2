@@ -1,5 +1,4 @@
-use client
-
+"use client";
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 import HeroSplit from '@/components/sections/hero/HeroSplit';
@@ -62,10 +61,12 @@ export default function Home() {
         <div className="mx-auto px-4 md:px-6">
           <ProductCardThree
             products={[
-  { id: "1", name: "Ribeye Steak", price: "$30", imageSrc: assetMap.find(a => a.id === "product-steaks")?.url },
-  { id: "2", name: "Filet Mignon", price: "$40", imageSrc: assetMap.find(a => a.id === "product-steaks")?.url },
-  { id: "3", name: "T-Bone Steak", price: "$50", imageSrc: assetMap.find(a => a.id === "product-steaks")?.url }
-]} title="Our Steaks"/>
+              { id: "1", name: "Ribeye Steak", price: "$30", imageSrc: assetMap.find(a => a.id === "product-steaks")?.url },
+              { id: "2", name: "Filet Mignon", price: "$40", imageSrc: assetMap.find(a => a.id === "product-steaks")?.url },
+              { id: "3", name: "T-Bone Steak", price: "$50", imageSrc: assetMap.find(a => a.id === "product-steaks")?.url }
+            ]}
+            title="Our Steaks"
+          />
         </div>
       </div>
       <div id="contact" data-section="contact" className="scroll-mt-24 bg-red-100 text-gray-900">
